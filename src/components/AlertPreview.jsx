@@ -6,10 +6,10 @@ const AlertPreview = () => {
       <div className="py-2 text-center text-sm">
         <>
           You&apos;re in preview mode.{' '}
-          <Link href="/api/exit-preview">
-            <a className="underline hover:text-accent transition-colors cursor-pointer">
+          <Link href="/api/exit-preview" className="underline hover:text-accent transition-colors cursor-pointer">
+
               Click here
-            </a>
+
           </Link>{' '}
           to exit.
         </>

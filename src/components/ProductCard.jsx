@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const ProductCard = ({ productName, imgPath, description, productLink }) => {
   return (
-    <a
+    <Link
       href={productLink}
       className="hover:opacity-70 w-auto transition-opacity"
     >
@@ -15,7 +15,7 @@ const ProductCard = ({ productName, imgPath, description, productLink }) => {
           <p className="text-sm pt-2">{description}</p>
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 

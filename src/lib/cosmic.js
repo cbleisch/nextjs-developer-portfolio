@@ -28,12 +28,13 @@ export async function getPreviewPostBySlug(slug) {
 
 export async function getAllPosts(preview, postType, postCount) {
   try {
+    console.log(postType)
     const data = await bucket.objects
       .find({
         type: postType,
       })
       .props(
-        'title,slug,metadata.category,metadata.excerpt,metadata.published_date,created_at,status'
+        'title,slug,content,metadata.category,metadata.excerpt,metadata.published_date,created_at,status'
       )
       .limit(postCount)
       .sort('-created_at')
@@ -49,8 +50,9 @@ export async function getAllPostsWithSlug() {
   try {
     const data = await bucket.objects.find({
       type: 'posts',
-      props: 'title,slug,metadata,created_at',
-    })
+      props: 'title,slug,content,metadata,created_at',
+    });
+    console.log(data)
     return data.objects
   } catch (error) {
     if (is404(error)) return

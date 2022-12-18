@@ -15,4 +15,8 @@ export const devIcons = [
   { iconName: 'devicon-graphql-plain', name: 'GraphQL' },
   { iconName: 'devicon-firebase-plain', name: 'Firebase' },
   { iconName: 'devicon-figma-plain', name: 'Figma' },
+  { iconName: 'devicon-bootstrap-plain', name: 'Bootstrap' },
+  { iconName: 'devicon-material-plain', name: 'Material UI' },
+  { iconName: 'devicon-python-plain', name: 'Python' },
+  { iconName: 'devicon-aws-plain', name: 'AWS' },
 ]

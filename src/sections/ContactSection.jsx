@@ -15,7 +15,7 @@ const ContactSection = () => {
         looking for an awesome team to code with.
       </p>
       <a
-        href="mailto:awesome@dev.com"
+        href="mailto:charles.bleisch@gmail.com"
         className="text-white px-16 py-3.5 mt-8 text-xl bg-gradient-to-r from-accent to-violet-400 rounded hover:from-pink-500 hover:to-yellow-500"
       >
         Say hello

@@ -5,9 +5,9 @@ import Image from 'next/image'
 const components = {
   a: a => {
     return (
-      <a href={a.href} rel="noopener noreferrer" target="_blank">
+      <Link href={a.href} rel="noopener noreferrer" target="_blank">
         {a.children}
-      </a>
+      </Link>
     )
   },
   img: img => {

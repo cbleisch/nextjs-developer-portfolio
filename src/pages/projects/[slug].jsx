@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import PostBody from '@/components/PostBody'
 import PostHeader from '@/components/PostHeader'
-import { getPostAndMorePosts, getAllPostsWithSlug } from '@/lib/cosmic'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/cosmic'
 import PostTitle from '@/components/PostTitle'
 import AlertPreview from '@/components/AlertPreview'
 import PageNotFound from '../404'
@@ -10,7 +10,7 @@ import { PostMeta } from '@/components/Meta'
 import Layout from '@/components/Layout'
 
 const Post = ({ post, preview }) => {
-  console.log(post)
+  console.log(post);
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <PageNotFound />
@@ -30,8 +30,8 @@ const Post = ({ post, preview }) => {
               title={post.title}
               description={post.metadata.excerpt}
               slug={post.slug}
-              page="posts"
-              imageUrl={post.metadata.cover_image.imgix_url || null}
+              page="projects"
+              imageUrl={post.metadata.cover_image?.imgix_url || null}
             />
             <article className="border-b border-back-subtle py-8 mb-8">
               {post.status === 'draft' ? (
@@ -50,7 +50,7 @@ export default Post
 
 export async function getStaticProps({ params, preview = null }) {
   const data = await getPostAndMorePosts(params.slug, preview)
-
+  console.log(data)
   return {
     props: {
       preview,
@@ -65,7 +65,7 @@ export async function getStaticProps({ params, preview = null }) {
 export async function getStaticPaths() {
   const allPosts = (await getAllPostsWithSlug()) || []
   return {
-    paths: allPosts.map(post => `/posts/${post.slug}`),
+    paths: allPosts.map(post => `/projects/${post.slug}`),
     fallback: true,
   }
 }

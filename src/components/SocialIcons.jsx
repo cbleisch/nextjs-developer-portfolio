@@ -4,7 +4,7 @@ const SocialIcons = () => {
   return (
     <span className="flex gap-x-5">
       <a
-        href="mailto:awesome@dev.com"
+        href="mailto:charles.bleisch@gmail.com"
         className="group cursor-pointer"
         aria-label="Email"
         title="Email"
@@ -12,7 +12,7 @@ const SocialIcons = () => {
         <EmailIcon />
       </a>
       <a
-        href="https://github.com/username"
+        href="https://github.com/cbleisch"
         className="group cursor-pointer"
         aria-label="Github"
         title="Github"
@@ -20,7 +20,7 @@ const SocialIcons = () => {
         <GithubIcon />
       </a>
       <a
-        href="https://www.linkedin.com/in/username"
+        href="https://www.linkedin.com/in/charlesbleisch/"
         className="group cursor-pointer"
         aria-label="Linkedin"
         title="Linkedin"

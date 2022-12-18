@@ -9,14 +9,15 @@ const ThemeChanger = ({ styles }) => {
 
   if (!mounted) return null
 
+  const resolvedThemeAction =  resolvedTheme === 'dark' ? 'Activate Light Mode' : 'Activate Dark Mode';
+  const resolvedThemeLabel =  resolvedTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
+
   return (
+    <>
+    <label className={''}>{resolvedThemeLabel}</label>
     <button
-      aria-label={
-        resolvedTheme === 'dark' ? 'Activate Light Mode' : 'Activate Dark Mode'
-      }
-      title={
-        resolvedTheme === 'dark' ? 'Activate Light Mode' : 'Activate Dark Mode'
-      }
+      aria-label={resolvedThemeAction}
+      title={resolvedThemeAction}
       onClick={() => {
         setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
       }}
@@ -28,6 +29,7 @@ const ThemeChanger = ({ styles }) => {
         <span className="block w-4 h-4 bg-black rounded-full group-hover:-translate-y-1 transition-transform" />
       )}
     </button>
+    </>
   )
 }
 

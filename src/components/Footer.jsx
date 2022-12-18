@@ -11,19 +11,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-col-reverse md:flex-row items-center md:justify-between gap-y-6 md:gap-y-0">
         <span className="text-sm">
-          &copy; {new Date().getFullYear()} Developer Portfolio All Rights
+          &copy; {new Date().getFullYear()} Charlie Bleisch | All Rights
           Reserved.
-        </span>
-        <span className="flex items-center text-sm">
-          Powered by
-          <a
-            href="https://www.cosmicjs.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-2"
-          >
-            <CosmicIcon />
-          </a>
         </span>
       </div>
     </footer>

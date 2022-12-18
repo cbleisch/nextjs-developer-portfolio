@@ -17,14 +17,14 @@ const PostList = ({ allPosts, postType, home }) => {
             }
             key={post.title}
           >
-            <Link href={`/${postType}/${post.slug}`}>
-              <a
-                className={
-                  home
-                    ? 'group flex flex-col lg:flex-row lg:items-center lg:justify-between px-8 py-5 -my-5 -mx-7 hover:bg-back-subtle transition-colors border-b-2'
-                    : 'group flex flex-col justify-start gap-y-6 p-8 h-full'
-                }
-              >
+            <Link href={`/${postType}/${post.slug}`}
+              className={
+                home
+                  ? 'group flex flex-col lg:flex-row lg:items-center lg:justify-between px-8 py-5 -my-5 -mx-7 hover:bg-back-subtle transition-colors border-b-2'
+                  : 'group flex flex-col justify-start gap-y-6 p-8 h-full'
+              }
+            >
+             
                 <div className="max-w-lg">
                   <h3 className="text-xl font-bold mb-1 group-hover:text-accent transition-colors">
                     {post.title}{' '}
@@ -56,7 +56,6 @@ const PostList = ({ allPosts, postType, home }) => {
                     )}
                   </p>
                 )}
-              </a>
             </Link>
           </li>
         ))}

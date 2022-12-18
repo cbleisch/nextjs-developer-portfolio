@@ -1,7 +1,7 @@
 import PostList from '@/components/PostList'
 import { PencilIcon } from '@/configs/icons'
 
-const WorksSection = ({ posts }) => {
+const ProjectsSection = ({ posts }) => {
   return (
     <section className="mt-24">
       <span className="flex items-center mb-8">
@@ -15,4 +15,4 @@ const WorksSection = ({ posts }) => {
   )
 }
 
-export default WorksSection
+export default ProjectsSection
