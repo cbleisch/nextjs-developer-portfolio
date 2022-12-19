@@ -27,7 +27,7 @@ const MenuItems = () => {
   const currentRoute = useRouter().pathname
   return (
     <>
-      <div className="relative items-center justify-start flex-grow hidden space-x-6 md:flex">
+      <div className="relative items-center justify-center flex-grow hidden space-x-6 md:flex">
         {routes.map(route => (
           <Link
             key={route.path}

@@ -14,7 +14,7 @@ const ThemeChanger = ({ styles }) => {
 
   return (
     <>
-    <label className={''}>{resolvedThemeLabel}</label>
+    <label className={'mr-4'}>{resolvedThemeLabel}</label>
     <button
       aria-label={resolvedThemeAction}
       title={resolvedThemeAction}

@@ -15,7 +15,7 @@ const Index = ({ allPosts, allProjects, preview }) => {
         title="Charlie Bleisch | Developer Portfolio"
         description="Developer Portfolio "
       />
-      <Layout preview={preview}>
+      <Layout preview={preview} className="scroll-smooth">
         <IntroSection />
         <AboutMeSection />
         <ToolboxSection />

@@ -40,9 +40,10 @@ const Navbar = () => {
         {!navOpen ? <MenuIcon /> : <CloseIcon />}
       </button>
       {!navOpen ? (
-        <div className="absolute top-3 left-2">
-          <Logo />
-        </div>
+        // <div className="absolute top-3 left-2">
+        //   <Logo />
+        // </div>
+        null
       ) : (
         <div className="flex flex-col z-40 h-screen w-full bg-back-primary overflow-hidden px-4 pt-16 mb-12">
           <ul className="flex flex-col gap-y-12">
@@ -57,7 +58,6 @@ const Navbar = () => {
                 >
                   
                     {route.label}
-                  
                 </Link>
               </li>
             ))}
