@@ -36,11 +36,11 @@ const About = ({ preview }) => {
               />
             </div>
             <div className="flex-1 mt-12 md:mt-0 flex flex-col justify-start gap-y-8 pr-20">
-              <p>I love solving problems!</p>
-              <p>
+              <div>I love solving problems!</p>
+              <div>
                 My name is Charlie Bleisch.
               </p>
-              <p>Get in touch to create something awesome together!</p>
+              <div>Get in touch to create something awesome together!</p>
               <div className="flex items-center md:mt-6">
                 {/* <a
                   href="/your_resume_here.pdf"

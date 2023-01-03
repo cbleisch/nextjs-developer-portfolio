@@ -64,4 +64,4 @@ export async function getStaticProps({ preview = null }) {
     props: { allPosts, allCareerExperiencesCategories, preview },
   }
 }
-export default Projects
+export default CareerExperiences

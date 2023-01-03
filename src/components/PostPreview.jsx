@@ -12,7 +12,7 @@ const PostPreview = ({ title, excerpt, slug }) => {
           {title}
         </Link>
       </h3>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <div className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
   )
 }

@@ -30,7 +30,7 @@ const Post = ({ post, preview }) => {
               title={post.title}
               description={post.metadata.excerpt}
               slug={post.slug}
-              page="career-experiences"
+              page="education-exeperiences"
               imageUrl={post.metadata.cover_image?.imgix_url || null}
             />
             <article className="border-b border-back-subtle py-8 mb-8">
@@ -65,7 +65,7 @@ export async function getStaticProps({ params, preview = null }) {
 export async function getStaticPaths() {
   const allPosts = (await getAllPostsWithSlug()) || []
   return {
-    paths: allPosts.map(post => `/career-experiences/${post.slug}`),
+    paths: allPosts.map(post => `/education-experiences/${post.slug}`),
     fallback: true,
   }
 }

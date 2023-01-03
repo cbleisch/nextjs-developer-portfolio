@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 const Header = () => {
   return (
     <>
-      <header className="md:pt-4 container max-w-screen-lg m-auto md:px-12 lg:px-20">
+      <header className="sticky md:pt-4 container max-w-screen-lg m-auto md:px-12 lg:px-20">
         <nav
           // className="hidden md:flex justify-center items-center h-full mt-auto space-x-6 text-sm lg:justify-center backdrop-filter backdrop-blur-sm  bg-opacity-30"
           className="relative

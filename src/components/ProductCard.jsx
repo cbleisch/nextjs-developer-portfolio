@@ -12,7 +12,7 @@ const ProductCard = ({ productName, imgPath, description, productLink }) => {
         </div>
         <div className="p-5 bg-white dark:bg-slate-900 rounded-b-md h-2/5">
           <h4 className="font-bold text-sm">{productName}</h4>
-          <p className="text-sm pt-2">{description}</p>
+          <div className="text-sm pt-2">{description}</p>
         </div>
       </div>
     </Link>

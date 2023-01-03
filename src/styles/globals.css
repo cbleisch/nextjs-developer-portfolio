@@ -19,9 +19,9 @@
   --color-back-secondary: hsla(240, 6%, 93%);
   --color-back-subtle: hsla(210, 38%, 92%);
 
-  --color-accent: hsla(221, 100%, 63%);
-  --color-second-accent: hsla(243, 78%, 68%);
-  --color-back-accent: hsla(217, 100%, 81%);
+  --color-accent: hsla(22, 71%, 53%);
+  --color-second-accent: hsl(22, 71%, 38%);
+  --color-back-accent: hsl(22, 70%, 68%);
 }
 
 .dark {
@@ -46,7 +46,9 @@
   position: relative;
 }
 .nav--item::after,
-.nav--item:focus::after {
+.nav--item:focus::after,
+.anchor-link::after,
+.anchor-link:focus::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -65,7 +67,9 @@
 }
 
 .nav--item:hover:after,
-.nav--item:focus::after {
+.nav--item:focus::after,
+.anchor-link:hover:after,
+.anchor-link:focus::after {
   transform: scaleX(1);
   transform-origin: left;
 }

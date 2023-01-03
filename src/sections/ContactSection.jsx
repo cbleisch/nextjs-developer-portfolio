@@ -10,10 +10,10 @@ const ContactSection = () => {
         </span>{' '}
         Get in touch
       </h3>
-      <p className="text-fore-subtle my-3 text-center">
+      <div className="text-fore-subtle my-3 text-center">
         While I&apos;m always looking for new opportunities, I&apos;m currently
         looking for an awesome team to code with.
-      </p>
+      </div>
       <a
         href="mailto:charles.bleisch@gmail.com"
         className="text-white px-16 py-3.5 mt-8 text-xl bg-gradient-to-r from-accent to-violet-400 rounded hover:from-pink-500 hover:to-yellow-500"

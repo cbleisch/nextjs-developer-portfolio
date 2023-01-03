@@ -7,16 +7,29 @@ export const routes = [
     label: 'Home',
   },
   {
-    path: '/posts',
-    label: 'Posts',
-  },
-  {
-    path: '/projects',
-    label: 'Projects',
-  },
-  {
-    path: '/about',
     label: 'About',
+    path: '/about',
+    to: 'about-section',
+  },
+  {
+    label: 'Resume',
+    path: '/resume',
+    to: '#resume-section',
+  },
+  {
+    label: 'Posts',
+    path: '/posts',
+    to: 'posts-section',
+  },
+  {
+    path: 'projects',
+    label: 'Projects',
+    to: 'projects-section',
+  },
+  {
+    path: '/skills',
+    label: 'Skills',
+    to: 'skills-section'
   },
 ]
 
@@ -31,7 +44,8 @@ const MenuItems = () => {
         {routes.map(route => (
           <Link
             key={route.path}
-            href={route.path}
+            to={route.to || null}
+            href={route.to || route.path}
             className={
               route.path === currentRoute
                 ? 'text-fore-primary transition-colors font-bold tracking-wide'
